@@ -14,7 +14,7 @@ public class BubbleSort {
 
 
         try {
-            myWriter = new FileWriter("random-integer.txt");    
+            myWriter = new FileWriter("random-integers.txt");    
 
             for (int d = 0 ; d<number.length ; d++){
                 number[d] = g.nextInt(100)+1;
@@ -32,7 +32,7 @@ public class BubbleSort {
             }
             
             myWriter.close();
-            
+
         } catch (IOException e1) {
             // TODO Auto-generated catch block
             e1.printStackTrace();
