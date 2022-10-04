@@ -1,3 +1,8 @@
+/**
+ * 
+ * https://www.geeksforgeeks.org/in-place-algorithm/
+ */
+
 import java.util.Random;
 import java.util.Arrays;
 
@@ -38,8 +43,8 @@ public class BubbleSort {
             e1.printStackTrace();
         }
 
-        System.out.print("\nunsorted Numbers:"+Arrays.toString(number));
-        System.out.print("\nSorted Numbers:"+Arrays.toString(sort(number)));
+        System.out.print("\nunsorted Numbers:" + Arrays.toString(number));
+        System.out.print("\nSorted Numbers:  " + Arrays.toString(sort(number)));
         System.out.print("\n\n");
 
     }
@@ -50,6 +55,7 @@ public class BubbleSort {
     public static int[] sort(int[] number) {
         boolean swapped = true;
         int length = number.length;
+
         while (swapped) {
             swapped = false;
             for (int i = 1; i < length; i++) {
